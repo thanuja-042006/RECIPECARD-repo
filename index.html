@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <title>Recipe Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+       .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .recipe-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .recipe-card h2 {
+      margin-top: 0;
+      color: #444;
+      font-size: 1.5rem;
+    }
+
+    .recipe-card h3, .recipe-card h4 {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .recipe-card ul, .recipe-card ol {
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .recipe-card li {
+      margin-bottom: 5px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .biryani { border-top: 6px solid #ff9800; }
+    .cake { border-top: 6px solid #8e44ad; }
+    .icecream { border-top: 6px solid #00bcd4; }
+    .chai { border-top: 6px solid #4caf50; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Recipe Card</h1>
+    <div class="grid">
+
+      <article class="recipe-card biryani">
+        <h2>Chicken Biryani</h2>
+        <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" alt="Chicken Biryani" class="icon">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>Chicken pieces</li>
+          <li>Basmati rice</li>
+          <li>Onions, tomatoes, ginger-garlic paste</li>
+          <li>Spices, herbs</li>
+          <li>Yogurt</li>
+        </ul>
+        <h3>Method</h3>
+        <ol>
+          <li>Marinate chicken, cook with spices and vegetables.</li>
+          <li>Layer rice and chicken, cook together until done.</li>
+        </ol>
+        <h4>Advantages</h4>
+        <ul>
+          <li>Rich taste, aromatic spices.</li>
+          <li>Provides proteins, carbohydrates.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+          <li>Time-consuming, high calorie.</li>
+        </ul>
+      </article>
+
+      <article class="recipe-card cake">
+        <h2>Chocolate Cake</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfifQWOd8HYvbAibQ9lmU9xKa2m1TEpNbwEQ&s" alt="Chocolate Cake" class="icon">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>Flour</li>
+          <li>Sugar</li>
+          <li>Cocoa powder</li>
+          <li>Baking powder & soda</li>
+          <li>Eggs, milk, oil</li>
+        </ul>
+        <h3>Method</h3>
+        <ol>
+          <li>Mix dry & wet ingredients.</li>
+          <li>Bake at 180°C for 35 minutes.</li>
+        </ol>
+        <h4>Advantages</h4>
+        <ul>
+          <li>Tasty, popular dessert.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+          <li>High in sugar and calories.</li>
+        </ul>
+      </article>
+
+      <article class="recipe-card icecream">
+        <h2>Ice Cream</h2>
+        <img src="https://www.milkmaid.in/sites/default/files/2022-12/Chocolate-Ice-Cream-335x300.jpg" alt="Ice Cream" class="icon">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>Milk, cream</li>
+          <li>Sugar</li>
+          <li>Flavor (e.g. vanilla, chocolate)</li>
+        </ul>
+        <h3>Method</h3>
+        <ol>
+          <li>Mix ingredients, churn and freeze till solid.</li>
+        </ol>
+        <h4>Advantages</h4>
+        <ul>
+          <li>Cools body, tasty treat.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+          <li>High in fat and sugar.</li>
+        </ul>
+      </article>
+
+      <article class="recipe-card chai">
+        <h2>MASALA CHAI</h2>
+        <img src="https://forktospoon.com/wp-content/uploads/2018/03/Instant-Pot-Spiced-Milk-Tea-Masala-Chai.jpg" alt="Masala Chai" class="icon">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>Tea leaves</li>
+          <li>Spices (ginger, cardamom, cinnamon)</li>
+          <li>Milk, sugar</li>
+        </ul>
+        <h3>Method</h3>
+        <ol>
+          <li>Boil water, add tea and spices.</li>
+          <li>Add milk, sugar, simmer & serve hot.</li>
+        </ol>
+        <h4>Advantages</h4>
+        <ul>
+          <li>Refreshing, aids digestion.</li>
+        </ul>
+        <h4>Disadvantages</h4>
+        <ul>
+          <li>Caffeine content may affect sleep.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</body>
+</html>
